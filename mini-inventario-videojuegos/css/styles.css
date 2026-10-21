@@ -1,0 +1,65 @@
+* { box-sizing: border-box; }
+
+body { 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    background: #f4f7fb; 
+    color: #202938; 
+}
+
+.contenedor { 
+    width: min(1000px, 92%); 
+    margin: 40px auto; 
+}
+
+h1 { text-align: center; }
+
+.tarjeta { 
+    background: white; 
+    padding: 24px; 
+    margin-bottom: 25px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+}
+
+form { display: grid; gap: 10px; }
+
+input, select, button { padding: 11px; font-size: 16px; }
+
+input, select { 
+    border: 1px solid #bbbbbb; 
+    border-radius: 7px; 
+}
+
+button { 
+    border: none; 
+    border-radius: 7px; 
+    cursor: pointer; 
+    background: #3157d5; 
+    color: white; 
+}
+
+button:hover { opacity: 0.9; }
+
+.secundario { background: #616161; }
+.eliminar { background: #b3261e; }
+.editar { background: #00695c; }
+
+.botones, .acciones { display: flex; gap: 10px; }
+.oculto { display: none; }
+
+.filtros {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.filtros input { flex: 1; }
+
+.tabla-contenedor { overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 12px; border-bottom: 1px solid #dddddd; text-align: left; }
+th { background: #eef2ff; }
+
+.mensaje-ok { color: #08783c; font-weight: bold; }
+.mensaje-error { color: #b3261e; font-weight: bold; }
